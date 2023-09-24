@@ -1,0 +1,173 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*------- Estilo barra de iconos redes y boton reserva -----------*/
+
+.barra-redes-reserva {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #766EF9 ;
+    margin:0px;
+    padding: 0px;
+    grid-area: barra-redes-reserva
+}
+.redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+.reserva {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+.reserva div {
+    background-color: #009b54;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    }
+    .reserva div a {
+        text-decoration: none;
+        color: white;
+        }
+        .reserva div:hover{
+            border: solid 2px;
+            border-color: #4CCDC0;
+        }
+
+/*------- Estilo barra de navegacion con logo -----------*/
+.encabezado {
+    display: flex;
+    background-color: #500FFF ;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    grid-area: menu
+
+}
+.encabezado img {
+    width: 200px;
+    
+}
+.encabezado ul {
+    list-style: none;
+    padding: 10px;
+}
+.encabezado ul li {
+    display: inline-block;
+}
+.encabezado li a {
+    color:#4CCDC0  ;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+.encabezado li a:hover {
+    background-color: #766EF9;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: end;
+}
+.logo {
+display: flex;
+justify-content: center;
+    }
+.menu2 {
+    display: flex;
+    justify-content: start;
+
+}
+
+#menu-toggler svg {
+    fill: var(--font-color);
+    height: 6rem;
+}
+#menu-toggler {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--font-color);
+    cursor: pointer;
+}
+/* Abrir y cerrar el nav menu */
+.menu-open {
+    display: flex;
+}
+.menu-close {
+    display: none;
+}
+
+/* Desktop nav menu */
+@media(min-width: 420px){
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #menu-toggler {
+        display: flex;
+    }
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 2vw;
+    }
+    #nav-menu a {
+        transition: transform 0.2s ease-in;
+    }
+    #nav-menu a:hover {
+        transform: scale(1.05, 1.05);
+        border-bottom: 1px solid var(--btn-color);
+    }
+}
+/*-------------Estilos articulos----------*/
+.articulo {
+    display: grid;
+    grid-template: auto auto auto;
+    border: solid double brown;
+    background-color: blueviolet;
+}
+.contenedor1 {
+    display: flex;
+    display: inline;
+    justify-content: center;
+    background-color: yellow;
+    text-align: center;
+}
+.contenedor2 {
+    display: flex;
+    display: inline;
+    justify-content: center;
+    background-color: green;
+}
+.contenedor3 {
+    display: flex;
+    display: inline;
+    justify-content: center;
+    background-color: blue;
+}
+.imagen {
+    display: flex;
+    display: inline;
+    justify-content: center;
+    background-color: red;
+}
+/*-------------------------------------------------
+Estilos para monitores grandes
+---------------------------------------------------*/
